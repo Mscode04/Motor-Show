@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile View Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+            background-color: #121212; /* Dark background */
+            color: #ffffff; /* Light text color */
+            position: relative;
+            overflow-x: hidden; /* Prevent horizontal overflow */
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .responsive-image {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .contact-btn {
+            padding: 10px 20px;
+            background-color: #ff5722; /* Button color */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin: 20px 0; /* Margin for spacing */
+        }
+
+        .contact-btn:hover {
+            background-color: #e64a19; /* Darker shade on hover */
+        }
+
+        .copyright {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #bbb; /* Lighter text color for copyright */
+        }
+
+        .copyright a {
+            color: #ff5722; /* Link color */
+            text-decoration: none;
+        }
+
+        /* Mobile-specific styling */
+        @media only screen and (max-width: 600px) {
+            .responsive-image {
+                width: 90%; /* Adjust image width */
+            }
+
+            .contact-btn {
+                padding: 12px; /* Increase padding for easier touch */
+                font-size: 18px; /* Slightly larger font */
+            }
+
+            h1 {
+                font-size: 20px; /* Slightly smaller heading for mobile */
+            }
+
+            p {
+                font-size: 14px; /* Adjust paragraph font size */
+            }
+
+            .additional-images img {
+                width: 90%; /* Adjust additional image width */
+                margin-bottom: 10px; /* Spacing between images */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./main.jpg" alt="Main Poster" class="responsive-image">
+        
+        <a href="https://wa.link/ch7rim"><button class="contact-btn">Book Ticket</button></a>
+        
+        <h1>Thrissur Motor Show</h1>
+        <p>India's first ever robotic integrated auto expo.</p>
+        
+        <!-- Additional Images -->
+        <div class="additional-images">
+            <img src="./TMS1.jpg" alt="Image 1" class="responsive-image">
+            <img src="./TMS2.jpg" alt="Image 2" class="responsive-image">
+            <img src="./TMS3.jpg" alt="Image 3" class="responsive-image">
+            <img src="./TMS5.jpg" alt="Image 4" class="responsive-image">
+            <img src="./TMS6.jpg" alt="Image 5" class="responsive-image">
+            <img src="./TMS8.jpg" alt="Image 6" class="responsive-image">
+            <img src="./TMS9.jpg" alt="Image 7" class="responsive-image">
+            <img src="./TMS10.jpg" alt="Image 8" class="responsive-image">
+            <img src="./TMS4.jpg" alt="Image 9" class="responsive-image">
+        </div>
+
+        <!-- Copyright Notice -->
+        <div class="copyright">
+            &copy; 2024 <a href="https://www.instagram.com/___zcl3_/" target="_blank">Ms Developer</a>
+        </div>
+    </div>
+</body>
+</html>
